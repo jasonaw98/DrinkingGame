@@ -3,27 +3,27 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "name": "Sippin ? Skippin",
-    "short_name": "Sip?Skip",
+    "name": "Drinking Games",
+    "short_name": "Drinking Games",
     "description": "Drinking Game",
     "icons": [
         {
-            "src": "/drink.png",
+            "src": "/quby.webp",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/drink.png",
+            "src": "/quby.webp",
             "sizes": "256x256",
             "type": "image/png"
         },
         {
-            "src": "/drink.png",
+            "src": "/quby.webp",
             "sizes": "384x384",
             "type": "image/png"
         },
         {
-            "src": "/drink.png",
+            "src": "/quby.webp",
             "sizes": "512x512",
             "type": "image/png"
         }
