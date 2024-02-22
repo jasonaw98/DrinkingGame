@@ -1,5 +1,4 @@
 import CardGame from '@/components/CardGame'
-import React from 'react'
 
 const page = () => {
   return (

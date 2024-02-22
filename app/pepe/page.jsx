@@ -1,8 +1,8 @@
-import Egg from '@/components/Egg'
+import Pepe from '@/components/Pepe'
 
 const page = () => {
   return (
-    <Egg/>
+    <Pepe/>
   )
 }
 
