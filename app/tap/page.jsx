@@ -31,20 +31,20 @@ const Egg = () => {
 
   return (
     <>
-      <main className="flex flex-col items-center w-full h-full">
+      <main className="flex flex-col items-center w-full h-full px-4">
         <Link
           href="/"
           className="flex justify-center text-[32px] pt-16 font-extrabold text-gray-100 mb-8">
           <h1 className="drop-shadow-md">🍻Tap Tap 🍻</h1>
         </Link>
-        <div className="flex flex-wrap w-[24rem] gap-0 justify-center">
+        <div className="grid grid-cols-4 w-full max-w-lg gap-0 justify-center items-center">
           {eggs.map((egg, index) => (
             <div
               key={index}
               onClick={() =>
                 !gameOver && egg === "normal" && handleEggTap(index)
               }
-              className={`flex items-center justify-center w-[90px] h-[90px] scale-[1.2] ${
+              className={`flex items-center justify-center flex-grow scale-[1.2] ${
                 index === spoiledEggIndex && gameOver
                   ? "scale-[5] z-20" : "scale-[1.2]"
               }`}
@@ -52,8 +52,10 @@ const Egg = () => {
                 transition: "transform 0.5s ease-in-out",
               }}
             >
-              {egg === "normal" && (
+              {egg === "normal" ? (
                 <Image src="/sticker2.gif" width={90} height={90} alt="egg"></Image>
+              ) : (
+                <Image src="/sticker2.gif" width={90} height={90} alt="egg" className="opacity-0"></Image>
               )}
             </div>
           ))}
