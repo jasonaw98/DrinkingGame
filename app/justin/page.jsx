@@ -34,10 +34,10 @@ const Pepe = () => {
       <main className="flex flex-col items-center w-full h-full">
         <Link
           href="/"
-          className="flex justify-center text-[32px] pt-16 font-extrabold text-emerald-500 mb-8">
-          <h1 className="drop-shadow-md">💚PEPE💚</h1>
+          className="flex justify-center text-[32px] pt-16 font-extrabold text-gray-200 mb-8">
+          <h1 className="drop-shadow-md">GANJINWEE</h1>
         </Link>
-        <div className="flex flex-wrap w-[24rem] gap-0 justify-center">
+        <div className="grid grid-cols-4 w-[24rem] gap-6 justify-center">
           {eggs.map((egg, index) => (
             <div
               key={index}
@@ -53,7 +53,7 @@ const Pepe = () => {
               }}
             >
               {egg === "normal" && (
-                <Image src="/pepehand.webp" width={72} height={90}></Image>
+                <Image src="/image.png" width={72} height={90} alt="pepe"></Image>
               )}
             </div>
           ))}
