@@ -44,23 +44,6 @@ export default function Home() {
             </span>
           </Link>
           <Link
-            href="/justin"
-            className="flex flex-col items-center rounded-2xl bg-[#262739] p-3 h-full justify-center"
-          >
-            <Image
-              className="rounded-xl"
-              src={"/image.png"}
-              width={140}
-              height={100}
-              alt="Picture of the author"
-            />
-            <span className="w-full flex justify-center rounded-b-xl">
-              <p className="text-xl font-bold text-gray-100 text-center">
-                Tap Game
-              </p>
-            </span>
-          </Link>
-          <Link
             href="/card"
             className="flex flex-col items-center rounded-2xl bg-[#262739] p-3 h-full justify-center "
           >

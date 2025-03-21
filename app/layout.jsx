@@ -6,11 +6,17 @@ export const metadata = {
   description: "Best mini drinking game",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/quby.webp"></link>
         <link rel="icon" href="quby.webp" />
       </head>
